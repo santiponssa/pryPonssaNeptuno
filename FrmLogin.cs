@@ -21,7 +21,10 @@ namespace pryPonssaNeptuno
         {
             if (txtUsuario.TextLength > 0 & txtContraseña.TextLength > 0)
             {
-                this.Close();
+                FrmBD frm = new FrmBD();
+                this.Hide();
+                frm.ShowDialog();
+                
             }
         }
     }
