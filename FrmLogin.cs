@@ -19,7 +19,10 @@ namespace pryPonssaNeptuno
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (txtUsuario.TextLength > 0 & txtContraseña.TextLength > 0)
+            {
+                this.Close();
+            }
         }
     }
 }

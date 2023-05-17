@@ -16,7 +16,7 @@ namespace pryPonssaNeptuno
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmBD());
+            Application.Run(new FrmLogin());
         }
     }
 }
