@@ -86,7 +86,7 @@
             this.Column9});
             this.dgvClientes.Location = new System.Drawing.Point(12, 84);
             this.dgvClientes.Name = "dgvClientes";
-            this.dgvClientes.Size = new System.Drawing.Size(690, 289);
+            this.dgvClientes.Size = new System.Drawing.Size(938, 289);
             this.dgvClientes.TabIndex = 3;
             // 
             // Column2
@@ -138,7 +138,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(701, 390);
+            this.ClientSize = new System.Drawing.Size(960, 383);
             this.Controls.Add(this.dgvClientes);
             this.Controls.Add(this.lblConexion);
             this.Controls.Add(this.lblLeer);

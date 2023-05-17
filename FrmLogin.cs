@@ -24,7 +24,6 @@ namespace pryPonssaNeptuno
                 FrmBD frm = new FrmBD();
                 this.Hide();
                 frm.ShowDialog();
-                
             }
         }
     }
