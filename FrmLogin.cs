@@ -26,5 +26,10 @@ namespace pryPonssaNeptuno
                 frm.ShowDialog();
             }
         }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

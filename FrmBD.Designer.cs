@@ -32,6 +32,8 @@
             this.lblLeer = new System.Windows.Forms.Label();
             this.lblConexion = new System.Windows.Forms.Label();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
+            this.lblPais = new System.Windows.Forms.Label();
+            this.lstPais = new System.Windows.Forms.ComboBox();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -89,9 +91,27 @@
             this.dgvClientes.Size = new System.Drawing.Size(938, 289);
             this.dgvClientes.TabIndex = 3;
             // 
+            // lblPais
+            // 
+            this.lblPais.AutoSize = true;
+            this.lblPais.Location = new System.Drawing.Point(209, 32);
+            this.lblPais.Name = "lblPais";
+            this.lblPais.Size = new System.Drawing.Size(78, 13);
+            this.lblPais.TabIndex = 4;
+            this.lblPais.Text = "Filtrar por País:";
+            // 
+            // lstPais
+            // 
+            this.lstPais.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstPais.FormattingEnabled = true;
+            this.lstPais.Location = new System.Drawing.Point(293, 29);
+            this.lstPais.Name = "lstPais";
+            this.lstPais.Size = new System.Drawing.Size(86, 21);
+            this.lstPais.TabIndex = 5;
+            // 
             // Column2
             // 
-            this.Column2.HeaderText = "ID";
+            this.Column2.HeaderText = "ID Cliente";
             this.Column2.Name = "Column2";
             // 
             // Column1
@@ -106,32 +126,32 @@
             // 
             // Column4
             // 
-            this.Column4.HeaderText = "Column4";
+            this.Column4.HeaderText = "Cargo";
             this.Column4.Name = "Column4";
             // 
             // Column5
             // 
-            this.Column5.HeaderText = "Column5";
+            this.Column5.HeaderText = "Dirección";
             this.Column5.Name = "Column5";
             // 
             // Column6
             // 
-            this.Column6.HeaderText = "Column6";
+            this.Column6.HeaderText = "Ciudad";
             this.Column6.Name = "Column6";
             // 
             // Column7
             // 
-            this.Column7.HeaderText = "Column7";
+            this.Column7.HeaderText = "Región";
             this.Column7.Name = "Column7";
             // 
             // Column8
             // 
-            this.Column8.HeaderText = "Column8";
+            this.Column8.HeaderText = "Cód. Postal";
             this.Column8.Name = "Column8";
             // 
             // Column9
             // 
-            this.Column9.HeaderText = "Column9";
+            this.Column9.HeaderText = "País";
             this.Column9.Name = "Column9";
             // 
             // FrmBD
@@ -139,6 +159,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(960, 383);
+            this.Controls.Add(this.lstPais);
+            this.Controls.Add(this.lblPais);
             this.Controls.Add(this.dgvClientes);
             this.Controls.Add(this.lblConexion);
             this.Controls.Add(this.lblLeer);
@@ -159,6 +181,8 @@
         private System.Windows.Forms.Label lblLeer;
         private System.Windows.Forms.Label lblConexion;
         private System.Windows.Forms.DataGridView dgvClientes;
+        private System.Windows.Forms.Label lblPais;
+        private System.Windows.Forms.ComboBox lstPais;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
