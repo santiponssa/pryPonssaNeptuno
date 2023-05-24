@@ -43,12 +43,15 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnElegirBD = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLeer
             // 
-            this.btnLeer.Location = new System.Drawing.Point(116, 27);
+            this.btnLeer.Location = new System.Drawing.Point(477, 29);
             this.btnLeer.Name = "btnLeer";
             this.btnLeer.Size = new System.Drawing.Size(75, 23);
             this.btnLeer.TabIndex = 0;
@@ -59,7 +62,7 @@
             // lblLeer
             // 
             this.lblLeer.AutoSize = true;
-            this.lblLeer.Location = new System.Drawing.Point(12, 32);
+            this.lblLeer.Location = new System.Drawing.Point(373, 34);
             this.lblLeer.Name = "lblLeer";
             this.lblLeer.Size = new System.Drawing.Size(98, 13);
             this.lblLeer.TabIndex = 1;
@@ -94,7 +97,7 @@
             // lblPais
             // 
             this.lblPais.AutoSize = true;
-            this.lblPais.Location = new System.Drawing.Point(209, 32);
+            this.lblPais.Location = new System.Drawing.Point(570, 34);
             this.lblPais.Name = "lblPais";
             this.lblPais.Size = new System.Drawing.Size(78, 13);
             this.lblPais.TabIndex = 4;
@@ -104,7 +107,7 @@
             // 
             this.lstPais.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.lstPais.FormattingEnabled = true;
-            this.lstPais.Location = new System.Drawing.Point(293, 29);
+            this.lstPais.Location = new System.Drawing.Point(654, 31);
             this.lstPais.Name = "lstPais";
             this.lstPais.Size = new System.Drawing.Size(86, 21);
             this.lstPais.TabIndex = 5;
@@ -154,11 +157,35 @@
             this.Column9.HeaderText = "País";
             this.Column9.Name = "Column9";
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(25, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(106, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Elegir Base de Datos";
+            // 
+            // btnElegirBD
+            // 
+            this.btnElegirBD.Location = new System.Drawing.Point(137, 29);
+            this.btnElegirBD.Name = "btnElegirBD";
+            this.btnElegirBD.Size = new System.Drawing.Size(75, 23);
+            this.btnElegirBD.TabIndex = 7;
+            this.btnElegirBD.Text = "Elegir BD";
+            this.btnElegirBD.UseVisualStyleBackColor = true;
+            // 
             // FrmBD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(960, 383);
+            this.Controls.Add(this.btnElegirBD);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lstPais);
             this.Controls.Add(this.lblPais);
             this.Controls.Add(this.dgvClientes);
@@ -192,5 +219,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnElegirBD;
     }
 }
