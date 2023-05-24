@@ -51,7 +51,7 @@
             // 
             // btnLeer
             // 
-            this.btnLeer.Location = new System.Drawing.Point(477, 29);
+            this.btnLeer.Location = new System.Drawing.Point(335, 29);
             this.btnLeer.Name = "btnLeer";
             this.btnLeer.Size = new System.Drawing.Size(75, 23);
             this.btnLeer.TabIndex = 0;
@@ -62,7 +62,7 @@
             // lblLeer
             // 
             this.lblLeer.AutoSize = true;
-            this.lblLeer.Location = new System.Drawing.Point(373, 34);
+            this.lblLeer.Location = new System.Drawing.Point(231, 34);
             this.lblLeer.Name = "lblLeer";
             this.lblLeer.Size = new System.Drawing.Size(98, 13);
             this.lblLeer.TabIndex = 1;
@@ -97,7 +97,7 @@
             // lblPais
             // 
             this.lblPais.AutoSize = true;
-            this.lblPais.Location = new System.Drawing.Point(570, 34);
+            this.lblPais.Location = new System.Drawing.Point(428, 34);
             this.lblPais.Name = "lblPais";
             this.lblPais.Size = new System.Drawing.Size(78, 13);
             this.lblPais.TabIndex = 4;
@@ -107,7 +107,7 @@
             // 
             this.lstPais.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.lstPais.FormattingEnabled = true;
-            this.lstPais.Location = new System.Drawing.Point(654, 31);
+            this.lstPais.Location = new System.Drawing.Point(512, 31);
             this.lstPais.Name = "lstPais";
             this.lstPais.Size = new System.Drawing.Size(86, 21);
             this.lstPais.TabIndex = 5;
