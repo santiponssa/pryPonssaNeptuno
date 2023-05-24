@@ -66,5 +66,10 @@ namespace pryPonssaNeptuno
                 MessageBox.Show(exc.Message);
             }
         }
+
+        private void btnElegirBD_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog
+        }
     }
 }

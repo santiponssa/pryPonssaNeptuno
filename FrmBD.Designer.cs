@@ -178,6 +178,7 @@
             this.btnElegirBD.TabIndex = 7;
             this.btnElegirBD.Text = "Elegir BD";
             this.btnElegirBD.UseVisualStyleBackColor = true;
+            this.btnElegirBD.Click += new System.EventHandler(this.btnElegirBD_Click);
             // 
             // FrmBD
             // 
