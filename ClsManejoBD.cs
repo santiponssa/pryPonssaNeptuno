@@ -35,6 +35,11 @@ namespace pryPonssaNeptuno
                 MessageBox.Show("Error: " + error.Message);
             }
         }
+        public void CargarGrilla()
+        {
+
+        }
+
         public void ListarTablasDeLaBaseDeDatos()
         {
             DataTable tablas;
