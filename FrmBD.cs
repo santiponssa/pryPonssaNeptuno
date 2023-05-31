@@ -30,7 +30,7 @@ namespace pryPonssaNeptuno
             try
             {
                 ConectarBD = new OleDbConnection();
-                ConectarBD.ConnectionString = "Provider = Microsoft.ACE.OLEDB.12.0; Data Source = C:\\NEPTUNO.accdb";
+                ConectarBD.ConnectionString = "Provider = Microsoft.ACE.OLEDB.12.0; Data Source = C:\\Users\\Alumno\\source\\repos\\santiponssa\\pryPonssaNeptuno\\NEPTUNO.accdb";
                 ConectarBD.Open();
                 lblConexion.Text = "Conexión establecida";
                 lblConexion.BackColor = Color.Green;
@@ -38,8 +38,6 @@ namespace pryPonssaNeptuno
             catch (Exception exc)
             {
                 MessageBox.Show(exc.Message);
-                //lblConexion.Text = "Hubo un error: " + exc.Message;
-                //lblConexion.BackColor = Color.Red;
             }
         }
 
@@ -69,7 +67,12 @@ namespace pryPonssaNeptuno
 
         private void btnElegirBD_Click(object sender, EventArgs e)
         {
-            OpenFileDialog
+
+        }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
         }
     }
 }

@@ -32,8 +32,6 @@
             this.lblLeer = new System.Windows.Forms.Label();
             this.lblConexion = new System.Windows.Forms.Label();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
-            this.lblPais = new System.Windows.Forms.Label();
-            this.lstPais = new System.Windows.Forms.ComboBox();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,6 +41,8 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblPais = new System.Windows.Forms.Label();
+            this.lstPais = new System.Windows.Forms.ComboBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.label1 = new System.Windows.Forms.Label();
             this.btnElegirBD = new System.Windows.Forms.Button();
@@ -94,24 +94,6 @@
             this.dgvClientes.Size = new System.Drawing.Size(938, 289);
             this.dgvClientes.TabIndex = 3;
             // 
-            // lblPais
-            // 
-            this.lblPais.AutoSize = true;
-            this.lblPais.Location = new System.Drawing.Point(428, 34);
-            this.lblPais.Name = "lblPais";
-            this.lblPais.Size = new System.Drawing.Size(78, 13);
-            this.lblPais.TabIndex = 4;
-            this.lblPais.Text = "Filtrar por País:";
-            // 
-            // lstPais
-            // 
-            this.lstPais.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.lstPais.FormattingEnabled = true;
-            this.lstPais.Location = new System.Drawing.Point(512, 31);
-            this.lstPais.Name = "lstPais";
-            this.lstPais.Size = new System.Drawing.Size(86, 21);
-            this.lstPais.TabIndex = 5;
-            // 
             // Column2
             // 
             this.Column2.HeaderText = "ID Cliente";
@@ -157,9 +139,28 @@
             this.Column9.HeaderText = "País";
             this.Column9.Name = "Column9";
             // 
+            // lblPais
+            // 
+            this.lblPais.AutoSize = true;
+            this.lblPais.Location = new System.Drawing.Point(428, 34);
+            this.lblPais.Name = "lblPais";
+            this.lblPais.Size = new System.Drawing.Size(78, 13);
+            this.lblPais.TabIndex = 4;
+            this.lblPais.Text = "Filtrar por País:";
+            // 
+            // lstPais
+            // 
+            this.lstPais.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstPais.FormattingEnabled = true;
+            this.lstPais.Location = new System.Drawing.Point(512, 31);
+            this.lstPais.Name = "lstPais";
+            this.lstPais.Size = new System.Drawing.Size(86, 21);
+            this.lstPais.TabIndex = 5;
+            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // label1
             // 
