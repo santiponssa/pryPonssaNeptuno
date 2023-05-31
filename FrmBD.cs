@@ -17,6 +17,9 @@ namespace pryPonssaNeptuno
     public partial class FrmBD : Form
     {
         ClsManejoBD objbase = new ClsManejoBD();
+        OleDbConnection conn;
+        OleDbCommand comm;
+        OleDbDataReader rdr;
         public FrmBD()
         {
             InitializeComponent();
@@ -27,7 +30,7 @@ namespace pryPonssaNeptuno
             try
             {
                 objbase.ConectarBD();
-                objbase.CargarLst(lst);
+                objbase.CargarLst(lstPais);
             }
             catch (Exception exc)
             {
@@ -39,18 +42,18 @@ namespace pryPonssaNeptuno
         {
             try
             {
-                ComandoBD = new OleDbCommand();
-                ComandoBD.Connection = ConectarBD;
-                ComandoBD.CommandType = CommandType.TableDirect;
-                ComandoBD.CommandText = "Clientes";
+                
+                comm.Connection = conn;
+                comm.CommandType = CommandType.TableDirect;
+                comm.CommandText = "Clientes";
                 lblConexion.Text = "Tabla obtenida";
                 lblConexion.BackColor = Color.Green;
-                LectorBD = ComandoBD.ExecuteReader();
+                rdr = comm.ExecuteReader();
 
-                while (LectorBD.Read())
+                while (rdr.Read())
                 {
-                    dgvClientes.Rows.Add(LectorBD[0], LectorBD[1], LectorBD[2],
-                        LectorBD[3], LectorBD[4], LectorBD[5], LectorBD[6], LectorBD[7], LectorBD[8]);
+                    dgvClientes.Rows.Add(rdr[0], rdr[1], rdr[2],
+                        rdr[3], rdr[4], rdr[5], rdr[6], rdr[7], rdr[8]);
                 }
             }
             catch (Exception exc)
@@ -72,9 +75,12 @@ namespace pryPonssaNeptuno
 
         private void btnFiltrar_Click(object sender, EventArgs e)
         {
-            Hide();
-            FrmFiltrar frm = new FrmFiltrar();
-            frm.ShowDialog();
+
+        }
+
+        private void lstPais_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -45,6 +45,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnElegirBD = new System.Windows.Forms.Button();
             this.btnFiltrar = new System.Windows.Forms.Button();
+            this.lstCiudad = new System.Windows.Forms.ComboBox();
+            this.lblCiudad = new System.Windows.Forms.Label();
+            this.lstPais = new System.Windows.Forms.ComboBox();
+            this.lblPais = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,46 +102,55 @@
             // 
             this.Column2.HeaderText = "ID Cliente";
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Compañía";
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Nombre";
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Cargo";
             this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "Dirección";
             this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             // 
             // Column6
             // 
             this.Column6.HeaderText = "Ciudad";
             this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
             // 
             // Column7
             // 
             this.Column7.HeaderText = "Región";
             this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
             // 
             // Column8
             // 
             this.Column8.HeaderText = "Cód. Postal";
             this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
             // 
             // Column9
             // 
             this.Column9.HeaderText = "País";
             this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
             // 
             // openFileDialog1
             // 
@@ -165,7 +178,7 @@
             // 
             // btnFiltrar
             // 
-            this.btnFiltrar.Location = new System.Drawing.Point(530, 29);
+            this.btnFiltrar.Location = new System.Drawing.Point(747, 29);
             this.btnFiltrar.Name = "btnFiltrar";
             this.btnFiltrar.Size = new System.Drawing.Size(75, 23);
             this.btnFiltrar.TabIndex = 8;
@@ -173,11 +186,52 @@
             this.btnFiltrar.UseVisualStyleBackColor = true;
             this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
             // 
+            // lstCiudad
+            // 
+            this.lstCiudad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstCiudad.FormattingEnabled = true;
+            this.lstCiudad.Location = new System.Drawing.Point(631, 31);
+            this.lstCiudad.Name = "lstCiudad";
+            this.lstCiudad.Size = new System.Drawing.Size(86, 21);
+            this.lstCiudad.TabIndex = 14;
+            // 
+            // lblCiudad
+            // 
+            this.lblCiudad.AutoSize = true;
+            this.lblCiudad.Location = new System.Drawing.Point(582, 34);
+            this.lblCiudad.Name = "lblCiudad";
+            this.lblCiudad.Size = new System.Drawing.Size(43, 13);
+            this.lblCiudad.TabIndex = 13;
+            this.lblCiudad.Text = "Ciudad:";
+            // 
+            // lstPais
+            // 
+            this.lstPais.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstPais.FormattingEnabled = true;
+            this.lstPais.Location = new System.Drawing.Point(477, 31);
+            this.lstPais.Name = "lstPais";
+            this.lstPais.Size = new System.Drawing.Size(86, 21);
+            this.lstPais.TabIndex = 12;
+            this.lstPais.SelectedIndexChanged += new System.EventHandler(this.lstPais_SelectedIndexChanged);
+            // 
+            // lblPais
+            // 
+            this.lblPais.AutoSize = true;
+            this.lblPais.Location = new System.Drawing.Point(439, 34);
+            this.lblPais.Name = "lblPais";
+            this.lblPais.Size = new System.Drawing.Size(32, 13);
+            this.lblPais.TabIndex = 11;
+            this.lblPais.Text = "País:";
+            // 
             // FrmBD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(960, 383);
+            this.Controls.Add(this.lstCiudad);
+            this.Controls.Add(this.lblCiudad);
+            this.Controls.Add(this.lstPais);
+            this.Controls.Add(this.lblPais);
             this.Controls.Add(this.btnFiltrar);
             this.Controls.Add(this.btnElegirBD);
             this.Controls.Add(this.label1);
@@ -214,5 +268,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnElegirBD;
         private System.Windows.Forms.Button btnFiltrar;
+        private System.Windows.Forms.ComboBox lstCiudad;
+        private System.Windows.Forms.Label lblCiudad;
+        private System.Windows.Forms.ComboBox lstPais;
+        private System.Windows.Forms.Label lblPais;
     }
 }

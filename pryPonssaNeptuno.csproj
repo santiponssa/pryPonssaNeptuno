@@ -53,12 +53,6 @@
     <Compile Include="FrmBD.Designer.cs">
       <DependentUpon>FrmBD.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmFiltrar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmFiltrar.Designer.cs">
-      <DependentUpon>FrmFiltrar.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,9 +68,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmBD.resx">
       <DependentUpon>FrmBD.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmFiltrar.resx">
-      <DependentUpon>FrmFiltrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
