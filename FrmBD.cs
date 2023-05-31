@@ -67,12 +67,20 @@ namespace pryPonssaNeptuno
 
         private void btnElegirBD_Click(object sender, EventArgs e)
         {
-
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.
         }
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
 
+        }
+
+        private void btnFiltrar_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FrmFiltrar frm = new FrmFiltrar();
+            frm.ShowDialog();
         }
     }
 }
