@@ -14,29 +14,25 @@ namespace pryPonssaNeptuno
     {
         //OBJETOS para manipular la conexiòn y datos de una BD
         //zona de declaraciones de objetos y variables
-        OleDbConnection conn;
-        OleDbCommand comm;
+        OleDbConnection conn = new OleDbConnection();
+        OleDbCommand comm = new OleDbCommand();
         OleDbDataReader rdr;
 
-        string ProveedorAcceso = "Provider = Microsoft.ACE.OLEDB.12.0; Data Source =";
-        public string RutaDeBaseDatos = "-";
+        public string RutaDeBaseDatos;
 
         public void ConectarBD()
         {
+            RutaDeBaseDatos = "Provider = Microsoft.ACE.OLEDB.12.0; Data Source = NEPTUNO.accdb";
             try
             {
-                //crea el objeto en memoria (instanciar)
-                conn = new OleDbConnection();
                 //debo ingresar la cadena de conexiòn (proveedor de la base, ruta, nombre de archivo)
-                conn.ConnectionString = ProveedorAcceso + "NEPTUNO.accdb";
+                conn.ConnectionString = RutaDeBaseDatos;
                 conn.Open();
-                
-                MessageBox.Show("Base de Datos abierta - con propiedades de la clase");
-
+                MessageBox.Show("Base de Datos conectada");
             }
-            catch (Exception fallo)
+            catch (Exception error)
             {
-                MessageBox.Show("Error: " + fallo.Message);
+                MessageBox.Show("Error: " + error.Message);
             }
         }
         public void ListarTablasDeLaBaseDeDatos()

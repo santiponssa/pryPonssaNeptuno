@@ -16,24 +16,18 @@ namespace pryPonssaNeptuno
 {
     public partial class FrmBD : Form
     {
+        ClsManejoBD objbase = new ClsManejoBD();
         public FrmBD()
         {
             InitializeComponent();
         }
 
-        OleDbConnection ConectarBD;
-        OleDbCommand ComandoBD;
-        OleDbDataReader LectorBD;
-
         private void FrmBD_Load(object sender, EventArgs e)
         {
             try
             {
-                ConectarBD = new OleDbConnection();
-                ConectarBD.ConnectionString = "Provider = Microsoft.ACE.OLEDB.12.0; Data Source = C:\\Users\\Alumno\\source\\repos\\santiponssa\\pryPonssaNeptuno\\NEPTUNO.accdb";
-                ConectarBD.Open();
-                lblConexion.Text = "Conexión establecida";
-                lblConexion.BackColor = Color.Green;
+                objbase.ConectarBD();
+                //objbase.CargarGrilla
             }
             catch (Exception exc)
             {
@@ -68,7 +62,7 @@ namespace pryPonssaNeptuno
         private void btnElegirBD_Click(object sender, EventArgs e)
         {
             OpenFileDialog dlg = new OpenFileDialog();
-            dlg.
+            //dlg.
         }
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
