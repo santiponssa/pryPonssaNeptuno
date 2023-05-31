@@ -17,8 +17,8 @@ namespace pryPonssaNeptuno
     public partial class FrmBD : Form
     {
         ClsManejoBD objbase = new ClsManejoBD();
-        OleDbConnection conn;
-        OleDbCommand comm;
+        OleDbConnection conn = new OleDbConnection();
+        OleDbCommand comm = new OleDbCommand();
         OleDbDataReader rdr;
         public FrmBD()
         {
@@ -42,7 +42,7 @@ namespace pryPonssaNeptuno
         {
             try
             {
-                
+                conn.Open();
                 comm.Connection = conn;
                 comm.CommandType = CommandType.TableDirect;
                 comm.CommandText = "Clientes";
