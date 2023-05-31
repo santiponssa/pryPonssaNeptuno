@@ -69,13 +69,5 @@ namespace pryPonssaNeptuno
             }
             rdr.Close();
         }
-        public void ListarTablasDeLaBaseDeDatos()
-        {
-            DataTable tablas;
-            tablas = conn.GetSchema("Tables");
-
-            //https://social.msdn.microsoft.com/Forums/es-ES/8b06cfb9-ce9b-4ad4-a8d5-53f0f281f198/obtener-el-nombre-de-todas-las-tablas-existentes-en-una-base-de-datos-acces-en-c?forum=vcses
-
-        }
     }
 }
