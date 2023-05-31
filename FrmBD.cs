@@ -27,7 +27,7 @@ namespace pryPonssaNeptuno
             try
             {
                 objbase.ConectarBD();
-                //objbase.CargarGrilla
+                objbase.CargarLst(lst);
             }
             catch (Exception exc)
             {
