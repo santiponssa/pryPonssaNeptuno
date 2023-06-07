@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace pryPonssaNeptuno
 {
-    internal class ClsManejoBD
+    public class ClsManejoBD
     {
         //OBJETOS para manipular la conexiòn y datos de una BD
         OleDbConnection conn = new OleDbConnection();

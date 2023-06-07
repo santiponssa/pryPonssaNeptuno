@@ -30,7 +30,7 @@ namespace pryPonssaNeptuno
             try
             {
                 objbase.ConectarBD();
-                objbase.CargarLst(lstPais);
+                //objbase.CargarLst(lstPais);
             }
             catch (Exception exc)
             {
@@ -42,6 +42,7 @@ namespace pryPonssaNeptuno
         {
             try
             {
+                objbase.ConectarBD();
                 conn.Open();
                 comm.Connection = conn;
                 comm.CommandType = CommandType.TableDirect;
